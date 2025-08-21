@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Magyarorsz&#225;g Tiszteletbeli Konzul&#225;tusa Hawaiin</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- 
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="Lato.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+ -->
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico">
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('parallax1.jpeg');
+        min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("parallax4.jpeg");
+        min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("parallax3.jpeg");
+        min-height: 400px;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1200px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+    
+    /* Container holding the image and the text */
+	.container {
+	  position: relative;
+	  text-align: center;
+	  color: white;
+	}
+
+	/* Bottom left text */
+	.bottom-left {
+	  position: absolute;
+	  bottom: 8px;
+	  left: 16px;
+	}
+
+	/* Top left text */
+	.top-left {
+	  position: absolute;
+	  top: 8px;
+	  left: 16px;
+	}
+
+	/* Top right text */
+	.top-right {
+	  position: absolute;
+	  top: 8px;
+	  right: 16px;
+	}
+
+	/* Bottom right text */
+	.bottom-right {
+	  position: absolute;
+	  bottom: 8px;
+	  right: 16px;
+	}
+
+	/* Centered text */
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">KEZD&#336;OLDAL</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> KONZUL&#193;TUS</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> HAWAII</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KAPCSOLAT</a>
+            <a href="index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> ENGLISH</a>
+<!-- 
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+ -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">KONZUL</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">HAWAII</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">KAPCSOLAT</a>
+            <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ENGLISH</a>
+<!-- 
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+ -->
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+<!-- 
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+ -->
+    <div class="bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle" style="white-space:normal;">
+            <p class="w3-center w3-padding-large w3-text-white w3-xxlarge w3-wide w3-animate-opacity" style="text-shadow:0 0 3px #000000;">
+            <span class="w3-hide-small">MAGYARORSZ&#193;G </span>TISZTELETBELI KONZUL&#193;TUS<span class="w3-hide-small">A HAWAIIN</span><br>
+            <img src="cimer.png" style="width:100px; padding:10px"
+                    alt="Coat of arms of Hungary">
+            </p>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">A KONZUL&#193;TUS</h3>
+        <p class="w3-center"><em>Miben seg&#237;thet egy tiszteletbeli konzul?</em></p>
+        <p>A tiszteletbeli konzulok f&#337; feladata a k&#252;lf&#246;ld&#246;n v&#233;szhelyzetbe ker&#252;lt magyar &#225;llampolg&#225;rok &#233;rdekv&#233;delme. Nem a magyar korm&#225;ny alkalmazottai, munk&#225;jukat &#246;nk&#233;ntesk&#233;nt v&#233;gzik, &#233;s csak korl&#225;tozott konzuli tev&#233;kenys&#233;gre kapnak felhatalmaz&#225;st. Egy sz&#369;k feladatk&#246;rt l&#225;tnak el, p&#233;ld&#225;ul al&#225;&#237;r&#225;st vagy dokumentum-m&#225;solatokat hiteles&#237;tenek, de nem foglalkoznak &#250;tlev&#233;l vagy v&#237;zum k&#233;rv&#233;nyekkel. A konzuli tev&#233;kenys&#233;get &#225;ltal&#225;ban egy f&#337;&#225;ll&#225;s mellett l&#225;tj&#225;k el, &#233;s nem mindig &#225;llnak rendelkez&#233;sre vagy v&#225;laszolnak azonnal telefonh&#237;v&#225;sokra. Ha a tiszteletbeli konzul nem tud szem&#233;lyesen seg&#237;ts&#233;get ny&#250;jtani, akkor sz&#252;ks&#233;g eset&#233;n tov&#225;bb&#237;tja a k&#233;r&#233;st a hozz&#225;&#233;rt&#337; magyar diplom&#225;ciai vagy konzuli k&#233;pviseletre.</p> 
+        <p>&#218;tlev&#233;l meg&#250;j&#237;t&#225;ssal illetve ki&#225;ll&#237;t&#225;ssal kapcsolatos k&#233;rv&#233;nyekkel kiz&#225;r&#243;lag a Magyar F&#337;konzul&#225;tusok &#233;s a Nagyk&#246;vets&#233;g foglalkozik. A Nagyk&#246;vets&#233;g <a href="https://washington.mfa.gov.hu/page/passport">&#250;tlev&#233;l int&#233;z&#233;ssel foglalkoz&#243; honlapja</a> sorolja fel azokat a k&#252;lk&#233;pviseleteket, ahol &#250;tlevelet lehet ig&#233;nyelni. <a href="https://washington.mfa.gov.hu/eng/page/visa-and-travel-information">V&#237;zum k&#233;rv&#233;nyekkel</a> a Washingtoni Nagyk&#246;vets&#233;g foglalkozik.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>F&uuml;leky P&eacute;ter, PhD</b></p><br>
+                <img src="avatar.jpg" class="w3-round w3-image w3-padding-small" alt="Photo of Me"
+                    width="250" height="250">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>A felvid&#233;ki magyar kisebbs&#233;g tagjak&#233;nt n&#337;ttem fel. &#201;p&#237;t&#337;m&#233;rn&#246;ki oklevelemet Pr&#225;g&#225;ban a Cseh M&#369;egyetemen kaptam, majd gazdas&#225;gi tan&#225;csad&#243;k&#233;nt dolgoztam Eur&#243;pa-szerte. 2000-ben k&#246;lt&#246;ztem az Egyes&#252;lt &#193;llamokba. MBA oklevelem megszerz&#233;se ut&#225;n &#225;llamk&#246;tv&#233;nyekkel kereskedtem Florid&#225;ban. PhD tanulm&#225;nyaim alatt gazdas&#225;gi elemz&#233;ssel foglalkoztam a Washingtoni Egyetemen, Seattleben. 2009-t&#337;l &#233;lek Hawaiin, ahol a Hawaii Egyetem tan&#225;ra &#233;s a K&#246;zgazdas&#225;gi Kutat&#243;int&#233;zet munkat&#225;rsa vagyok. T&#225;rsszerz&#337;je vagyok a Kutat&#243;int&#233;zet &#225;ltal negyed&#233;vente kiadott hawaii gazdas&#225;gi elemz&#233;snek. Fiatalabb koromban versenyszer&#369;en s&#237;eltem, de a helyi h&#243;viszonyokhoz alkalmazkodva Hawaiin sz&#246;rf&#246;zni kezdtem.
+                </p>
+            </div>
+        </div>
+<!-- 
+        <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+        <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div>
+ -->
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+<!-- 
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+ -->
+    <div class="bgimg-2 w3-display-container" id="portfolio">
+        <div class="w3-display-middle" style="white-space:normal;">
+            <p class="w3-center w3-xxlarge w3-text-white w3-wide" style="text-shadow:0 0 3px #000000;">HAWAII</p>
+        </div>
+    </div>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">1.4M</span><br>
+            Lakoss&#225;g
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">Honolulu</span><br>
+            F&#337;v&#225;ros
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">Amerikai Doll&#225;r</span><br>
+            P&#233;nznem
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">+1 (808)</span><br>
+            H&#237;v&#243;sz&#225;m
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+
+        <h3 class="w3-center">INFORM&#193;CI&#211;</h3>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+
+            <div class="w3-col m3">
+            	<div class="container w3-opacity w3-hover-opacity-off">
+                 <a href="https://www.gohawaii.com"><img src="p5.jpeg" style="width:100%;" class="w3-round w3-image"
+                    alt="Latogass Hawaiira">
+                 <span class="centered w3-large" style="text-shadow:0 0 3px #000000;">L&#193;TOGASS HAWAIIRA</span></a>
+            	</div>
+            </div>
+            <div class="w3-col m3">
+            	<div class="container w3-opacity w3-hover-opacity-off">
+                 <a href="https://studyhawaii.org"><img src="p2.jpeg" style="width:100%;" class="w3-round w3-image"
+                    alt="Study in Hawaii">
+                 <span class="centered w3-large" style="text-shadow:0 0 3px #000000;">TANULJ HAWAIIN</span></a>
+            	</div>
+            </div>
+            <div class="w3-col m3">
+            	<div class="container w3-opacity w3-hover-opacity-off">
+                 <a href="https://washington.mfa.gov.hu"><img src="p3.jpeg" style="width:100%;" class="w3-round w3-image"
+                    alt="Nagykovetseg DC-ben">
+                 <span class="centered w3-large" style="text-shadow:0 0 3px #000000;">MAGYAR NAGYK&#214;VETS&#201;G</span></a>
+            	</div>
+            </div>
+            <div class="w3-col m3">
+            	<div class="container w3-opacity w3-hover-opacity-off">
+                 <a href="https://www.facebook.com/HawaiiMagyarok"><img src="p4.png" style="width:100%;" class="w3-round w3-image"
+                    alt="Hawaii Magyarok">
+                 <span class="centered w3-large" style="text-shadow:0 0 3px #000000;">HAWAII MAGYAROK</span></a>
+            	</div>
+            </div>
+
+        </div>
+
+<!-- 
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="p5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="p6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="My beloved typewriter">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="p7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Empty ghost train">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="p8.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+            </div>
+            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+        </div>
+ -->
+        <div class="w3-padding-top-32">
+        <h3 class="w3-center">TUDJ MEG T&#214;BBET HAWAIIR&#211;L</h3>
+        <p class="w3-center"><em>Egy gyors &#225;ttekint&#233;s Hawaii t&#246;rt&#233;nelm&#233;r&#337;l, gazdas&#225;g&#225;r&#243;l &#233;s f&#246;ldrajz&#225;r&#243;l a <a href="https://en.wikipedia.org/wiki/Hawaii">Wikipedia</a>-n tal&#225;lhat&#243;.<br> 
+        R&#233;szletesebb inform&#225;ci&#243; a <a href="https://www.britannica.com/place/Hawaii-state">Britannica</a>-n.</em></p>
+        </div>
+
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+    
+    <!-- Third Parallax Image with Portfolio Text -->
+<!-- 
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+ -->
+    <div class="bgimg-3 w3-display-container" id="contact">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:0 0 3px #000000;">KAPCSOLAT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">EL&#201;RHET&#336;S&#201;G</h3>
+        <p class="w3-center"><em>El&#233;rhet&#337;ek vagyunk telefonon &#233;s emailen.</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container w3-opacity w3-hover-opacity-off">
+             	<div class="container">
+               <a href="https://www.google.com/maps/place/1517+St+Louis+Dr,+Honolulu,+HI+96816,+USA/@21.295618,-157.8095107">
+                <img src="map.jpeg" class="w3-image w3-round" style="width:100%;" alt="Map">
+                <span class="centered w3-large" style="text-shadow:0 0 3px #000000;">T&#201;RK&#201;P</span>
+                </a>
+            	</div>
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 1517 Saint Louis Drive<br>
+                    <i class="fa fa-fw w3-hover-text-black w3-xlarge w3-margin-right"> </i> Honolulu, HI 96816, USA<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefon: +1 (202) 681-3438<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: h3consul@gmail.com<br>
+                    <!-- <i class="fa fa-newspaper-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://bd2d6c6c.sibforms.com/serve/MUIEAGG-oxDrdoaShpgAMTiiIXWYw981RPIuy7Jx7ZbiaZc2dSpxrgO4gr6bBUoBGXThxkcYDO1jy6XVgjyiKMCQt2IwswdbtUu4VCKkrNjTg9VUXECW3DrWkTDsfrzQ25D4pYhVrVqixoj1V0fvMOS_n-av6KeBmh-lZgJrazxVIjgTtmjM9DdTIY7-zfwIaTma2vmvu2TaQLKr" target="_blank">H&#237;rlev&#233;l feliratkoz&#225;s</a> (&#250;j ablak)<br> -->
+                    <i class="fa fa-file-text-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="files/hirlevel.html" target="_blank">H&#237;rlev&#233;l</a>&nbsp;<i class="fa fa-arrow-right fa-fw w3-hover-text-black w3-xlarge" style="vertical-align:baseline"></i>&nbsp;<a href="https://bd2d6c6c.sibforms.com/serve/MUIEAGG-oxDrdoaShpgAMTiiIXWYw981RPIuy7Jx7ZbiaZc2dSpxrgO4gr6bBUoBGXThxkcYDO1jy6XVgjyiKMCQt2IwswdbtUu4VCKkrNjTg9VUXECW3DrWkTDsfrzQ25D4pYhVrVqixoj1V0fvMOS_n-av6KeBmh-lZgJrazxVIjgTtmjM9DdTIY7-zfwIaTma2vmvu2TaQLKr" target="_blank">FELIRATKOZ&#193;S</a><br>
+                </div>
+<!-- 
+                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave a note:</p>
+                <p>Leave a note:</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+ -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<!-- 
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+ -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Kezd&#337;oldal</a>
+<!-- 
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+ -->
+	    
+	<p>Fot&#243;k: <a href="https://unsplash.com/@jarvisphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Braden Jarvis</a>, <a href="https://unsplash.com/@aussieactive?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">AussieActive</a>, <a href="https://unsplash.com/@chasefoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Chase O</a></p>
+<!--         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-grey">w3.css</a> and <a href="https://unsplash.com" title="Unsplash" target="_blank"
+                class="w3-hover-text-grey">Unsplash</a></p> -->
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
